@@ -1,10 +1,10 @@
-.mybackground{
-    position:fixed;
+.mybackground {
+    position: fixed;
     /* background-repeat: repeat-x;
     background-repeat: repeat-y; */
     background-size: cover;
     /* background-repeat: repeat-x; */
-    color: #a3a3a3;
+    color: #999;
     position: absolute;
     top: 0;
     left: 0;
@@ -13,16 +13,18 @@
     z-index: -100;
 
 }
-.collapsible{
+
+.collapsible {
     /* color: #baaac8; */
     -webkit-text-fill-color: #ccc;
-    -webkit-text-stroke: 0.03rem #aa00ffbb; 
+    -webkit-text-stroke: 0.03rem #aa00ffbb;
     letter-spacing: 0.15rem;
     /* stroke: antiquewhite; */
     /* stroke-width: 100cm; */
-    stroke-opacity: 50%;
+    stroke-opacity: 69%;
 
-    background-color: #505050;
+    /* background-color: #464646; */
+    background: linear-gradient(35deg, #4d4d4d, #808080, #333333);
     /* color: white; */
     cursor: pointer;
     padding: 18px;
@@ -30,14 +32,17 @@
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;   
+    font-size: 15px;
 }
 
-.active, .collapsible:hover {
-    background-color: #616161;
+.active,
+.collapsible:hover {
+    /* background-color: #eb3d3d; */
+    /* background: #696969; */
+    background: linear-gradient(35deg, #808080, #585858, #2e2e2e);
 }
 
-.ctx{
+.ctx {
     /* color: #ebebeb; */
     padding: 0 18px;
     display: none;
@@ -46,9 +51,11 @@
     transition: all 2s ease-in-out;
 }
 
-.txt_ctx{
+.txt_ctx {
     /* float: left; */
-    color: black;
+    background-color: rgba(60, 0, 106, 0.40);
+    color: #ddd;
+    /*color: black; */
     /* color: #ebebeb; */
     padding: 0 18px;
     display: none;
@@ -58,10 +65,13 @@
     animation: animateDivSize 2s infinite alternate;
 }
 
+.media {
+    text-align: center;
+}
 
 img {
-    display: grid;    
+    display: grid;
     place-items: center;
     margin: 0 auto;
-    transition : width 2s, height 2s;
+    transition: width 2s, height 2s;
 }

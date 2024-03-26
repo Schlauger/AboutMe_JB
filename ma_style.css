@@ -1,3 +1,7 @@
+:root {
+    --main-bg---ggs: 15;
+  }
+
 .mybackground {
     position: fixed;
     /* background-repeat: repeat-x;
